@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Basic Bot Interactions -->
+	
+<category>
+	<pattern>WHAT IS CULTURE HUSTLE</pattern>
+	<template>need answer</template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOU LOOK LIKE</pattern>
+	<template>
+	    <image>
+	        https://i.imgur.com/NhPtl5r.jpg
+	    </image>
+	    may delete later idk
+	</template>
+</category>
+
+<!-- Questions from Mariia Emails -->
+
+<category>
+	<pattern>CAN I ADD THE GLITTER TO PAINT IF I WANTED TO?</pattern>
+	<template>need answer mention Diamond Dust aswell</template>
+</category>
+
+<category>
+    <pattern>How do you</pattern>
+    <template></template>
+</category>
+
+<!-- Extra Questions -->
+
+<category>
+	<pattern>STUART SEMPLE</pattern>
+	<template>
+	    <random>
+	    <li>Elpmes Trauts.</li>
+	    <li>Semple Stuart.</li>
+	    <li>Stew Art Sem Pull.</li>
+	    <li>Tuart Emple.</li>
+	    <li>Trauts Elpmes.</li>
+	    </random>
+	    <ul>
+        <li>
+            <link>
+                <text>Visit his official website and take a look at his previous art!</text>
+                <url>http://stuartsemple.com/</url>
+            </link>
+        </li>
+        <li>
+            <link>
+                <text>Or visit the culture hustle website look through our products!</text>
+                <url>https://culturehustle.com/</url>
+            </link>
+        </li>
+        <li></li>
+        </ul>
+
+	</template>
+</category>
+
+</aiml>

@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<!-- Categories for Products -->
+	
+	<category>
+	    <pattern># <set>products</set> #</pattern>
+	    <template>
+	        Great! What product do you want to ask about?
+	        <carousel>
+	            <card>
+	                <image>https://i.imgur.com/AyPPnXI.jpg</image>
+	                <title>Black</title>
+	                <subtitle></subtitle>
+	                <button>
+	                    <text>Let's talk about Black!</text>
+	                    <postback>moreabout blk</postback>
+                    </button>
+                </card>
+	            <card>
+	                <image>https://i.imgur.com/BEDYV0z.jpg</image>
+	                <title>Our Powders</title>
+	                <subtitle></subtitle>
+	                <button>
+	                    <text>Let's talk about powders!</text>
+	                    <postback>moreabout powders</postback>
+                    </button>
+                </card>
+                <card>
+	                <image>https://i.imgur.com/SpY02Rb.jpg</image>
+	                <title>Diamond Dust</title>
+	                <subtitle></subtitle>
+	                <button>
+	                    <text>Let's talk about Diamond Dust!</text>
+	                    <postback>moreabout dd</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/AF9tKb7.jpg</image>
+                    <title>Our Glitters</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about our Glitters!</text>
+                        <postback>moreabout glitters</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/LJX5dqh.jpg</image>
+                    <title>Our Potions</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about our Potions!</text>
+                        <postback>moreabout potions</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/ofqu4I9.jpg</image>
+                    <title>Superbase</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Superbase!</text>
+                        <postback>moreabout superbase</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/s3Xt5k7.jpg</image>
+                    <title>Gold and Silver</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Gold and Silver!</text>
+                        <postback>moreabout goldsilver</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/OyiD95Y.jpg</image>
+                    <title>Our Lit</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about our Lit!</text>
+                        <postback>moreabout lit</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/ORD1WX6.jpg</image>
+                    <title>Phaze</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Phaze!</text>
+                        <postback>moreabout phaze</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/ZdD5AK1.jpg</image>
+                    <title>Rainbow Liquid</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Rainbow Liquid!</text>
+                        <postback>moreabout rl</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/cEIhLGn.jpg</image>
+                    <title>Palette</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Palette!</text>
+                        <postback>moreabout palette</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/r33uJ6I.jpg</image>
+                    <title>Coat</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Coat!</text>
+                        <postback>moreabout coat</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/baggiest_bag_man_1024x1024@2x.jpg?v=1519667114</image>
+                    <title>Our Merch</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about our merch!</text>
+                        <postback>moreabout merch</postback>
+                    </button>
+                </card>
+            </carousel>
+            (If you want to know about art, artists, and paintings in general or maybe just want to get some inspiration instead of our products, type in 'Art')
+	    </template>
+    </category>
+    
+
+    
+    <!-- Diamond Dust .................................................................. -->
+    
+	<category>
+	    <pattern>moreabout dd</pattern>
+	    <template>So what do you want to know about Diamond Dust? </template>
+    </category>
+
+    <category>
+        <pattern>CAN <set>diamonddust</set> BE ADDED TO #</pattern>
+        <template>Diamond Dust can be added over any of our paints. The best thing to do is finish your painting, add a layer of varnish of your choice, and then sprinkle the diamond dust on top of the wet varnish 😀</template>
+    </category>
+	    <category>
+        <pattern>CAN <set>diamonddust</set> BE USED WITH #</pattern>
+        <template><srai>CAN DIAMOND DUST BE ADDED TO #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN IT BE ADDED TO #</pattern>
+        <that>So what do you want to know about Diamond Dust?</that>
+        <template><srai>CAN <set>diamonddust</set> BE ADDED TO #</srai></template>
+    </category>
+    
+	<!-- Powders .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout powders</pattern>
+	    <template>So what do you want to know about our powders?</template>
+    </category>
+	
+	<!-- Glitters .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout glitters</pattern>
+	    <template>So what do you want to know about our glitters?</template>
+    </category>
+    
+    <category>
+        <pattern>CAN <set>glitters</set> BE ADDED TO #</pattern>
+        <template>need answer</template>
+    </category>
+    <category>
+        <pattern>CAN <set>glitters</set> BE # TO #</pattern>
+        <template><srai>CAN <set>glitters</set> BE ADDED TO #</srai></template>
+    </category>
+	    <category>
+        <pattern>CAN <set>glitters</set> BE USED WITH #</pattern>
+        <template><srai>CAN <set>glitters</set> BE ADDED TO #</srai></template>
+    </category>
+        <category>
+        <pattern>CAN <set>glitters</set> BE ADDED TO #</pattern>
+        <template><srai>CAN <set>glitters</set> BE ADDED TO #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN <set>glitters</set> BE # TO #</pattern>
+        <template>need answer</template>
+    </category>
+	<category>
+        <pattern>CAN <set>glitters</set> BE USED WITH #</pattern>
+        <template><srai>CAN <set>glitters</set> BE ADDED TO #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN IT BE ADDED TO #</pattern>
+        <that>So what do you want to know about our glitters?</that>
+        <template><srai>CAN <set>glitters</set> BE # TO #</srai></template>
+    </category>
+    
+	<!-- Potions .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout potions</pattern>
+	    <template>So what do you want to know about our potions?</template>
+    </category>
+    
+    <category>
+        <pattern>CAN # <set>potions</set> # BE # GLASS</pattern>
+        <template>Yes, our acrylic potions will work on glass along with our Black paints, gold, and silver 😋</template>
+    </category>
+    <category>
+        <pattern>CAN # <set>potions</set> # GO # GLASS</pattern>
+        <template><srai>CAN # <set>potions</set> # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>DO # <set>potions</set> # GO # GLASS</pattern>
+        <template><srai>CAN # <set>potions</set> # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # IT # GO # GLASS</pattern>
+        <that>So what do you want to know about our potions?</that>
+        <template><srai>CAN # <set>potions</set> # BE # GLASS</srai></template>
+    </category>
+	<category>
+        <pattern>DOES # IT # GO # GLASS</pattern>
+        <that>So what do you want to know about our potions?</that>
+        <template><srai>CAN # <set>potions</set> # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>DOES # GO # GLASS</pattern>
+        <that>So what do you want to know about our potions?</that>
+        <template><srai>CAN # <set>potions</set> # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # GO # GLASS</pattern>
+        <that>So what do you want to know about our potions?</that>
+        <template><srai>CAN # <set>potions</set> # BE # GLASS</srai></template>
+    </category>
+	
+	<!-- Superbase .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout superbase</pattern>
+	    <template>So what do you want to know about Superbase?</template>
+    </category>
+	
+	<!-- Gold/Silver .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout goldsilver</pattern>
+	    <template>So what do you want to know about Gold and/or Silver?</template>
+    </category>
+	
+	<!-- Lit .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout lit</pattern>
+	    <template>So what do you want to know about our Lit products?</template>
+    </category>
+    <!-- Will lit still glow when mixed in something -->
+    <category>
+        <pattern>WILL # <set>lit</set> # GLOW #</pattern>
+        <template>You can't really mix Lit into a paint. It won't make the paint glow and the paint would coat the glow particles. Lit is designed to be used as a colour in it's own right once it's mixed with a base. If you want to try it out, click below! 😎
+        <button>
+            <text>Lit (50g)</text>
+            <url>https://culturehustle.com/collections/powders/products/lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-by-stuart-semple</url>
+        </button>
+        <button>
+            <text>Big Lit (300g)</text>
+            <url>https://culturehustle.com/collections/powders/products/big-lit-the-worlds-glowiest-glow-pigment-500g</url>
+        </button>
+        <button>
+            <text>Blue Lit (50g)</text>
+            <url>https://culturehustle.com/collections/powders/products/blue-lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-in-blue-by-stuart-semple</url>
+        </button>
+        </template>
+    </category>
+	<category>
+        <pattern>IF # <set>lit</set> # STILL # GLOW #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # <set>lit</set> # STILL # GLOW #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+    <category>
+        <pattern>IF # <set>lit</set> # STILL # GLOW #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # IT # STILL # GLOW #</pattern>
+        <that>So what do you want to know about our Lit products?</that>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+    <category>
+        <pattern>IF # IT # STILL # GLOW #</pattern>
+        <that>So what do you want to know about our Lit products?</that>
+        <template><srai>WILL # <set>lit</set> # GLOW #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>lit</set> # GO #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>lit</set> # $MIXED #</pattern>
+        <template><srai>WILL # <set>lit</set> # GLOW #</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # <set>lit</set> # GO #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>lit</set> # WORK #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # <set>lit</set> # WORK #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>lit</set> # PAINT #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # <set>lit</set> # PAINT #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+    <category>
+        <pattern>DOES # <set>lit</set> # PAINT #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW *</srai></template>
+    </category>
+    <!-- Using lit on metal/aluminium-->
+    <category>
+        <pattern>WILL # <set>lit</set> # GLOW # METAL #</pattern>
+        <template>What an amazing idea! I think you'd need some kind of metal primer to go on the aluminium first, then mix the lit with the super base and paint a few coats. You can protect it with a clear varnish. Check out some of our lit products if you haven't already! 
+        <button>
+            <text>Lit (50g)</text>
+            <url>https://culturehustle.com/collections/powders/products/lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-by-stuart-semple</url>
+        </button>
+        <button>
+            <text>Big Lit (300g)</text>
+            <url>https://culturehustle.com/collections/powders/products/big-lit-the-worlds-glowiest-glow-pigment-500g</url>
+        </button>
+        <button>
+            <text>Blue Lit (50g)</text>
+            <url>https://culturehustle.com/collections/powders/products/blue-lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-in-blue-by-stuart-semple</url>
+        </button>
+        </template>
+    </category>
+	<category>
+        <pattern>IF * <set>lit</set> * STILL * GLOW * METAL *</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # <set>lit</set> # STILL # GLOW # METAL #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+    <category>
+        <pattern>IF # <set>lit</set> # METAL # STILL # GLOW #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # IT # STILL # GLOW # METAL #</pattern>
+        <that>So what do you want to know about our Lit products?</that>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+    <category>
+        <pattern>IF # IT # STILL # GLOW # METAL #</pattern>
+        <that>So what do you want to know about our Lit products?</that>
+        <template><srai>WILL # <set>lit</set> # GLOW # METAL #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>lit</set> # GO # METAL #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # <set>lit</set> # GO # METAL #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>lit</set> # WORK # METAL #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # <set>lit</set> # WORK # METAL #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>lit</set> # METAL #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+	<category>
+        <pattern>WILL # <set>lit</set> # METAL #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+    <category>
+        <pattern>DOES # <set>lit</set> # METAL #</pattern>
+        <template><srai>WILL * <set>lit</set> * GLOW * METAL *</srai></template>
+    </category>
+	
+	<!-- Phaze .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout phaze</pattern>
+	    <template>So what do you want to know about Phaze?</template>
+    </category>
+	
+	<!-- Rainbow Liquid .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout rl</pattern>
+	    <template>So what do you want to know about Rainbow Liquid?</template>
+    </category>
+	
+	<!-- Black .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout blk</pattern>
+	    <template>So what do you want to know about our black products?</template>
+    </category>
+    
+        <!-- Using black on glass-->
+    <category>
+        <pattern>CAN # <set>black</set> # BE # GLASS</pattern>
+        <template>Yes, our black paints will work on glass along with our acrylic potions, gold, and silver 😋 Click below if you want to check out our Black paints!
+        <button>
+            <text>Black 2.0</text>
+            <url>https://culturehustle.com/collections/potions/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material</url>
+        </button>
+        <button>
+            <text>Black 3.0 (coming soon 😏)</text>
+            <url>https://culturehustle.com/collections/potions/products/black-3-0-the-worlds-blackest-black-acrylic-paint-150ml</url>
+        </button>
+        </template>
+    </category>
+    <category>
+        <pattern>CAN # <set>black</set> # $GLASS</pattern>
+        <template><srai>CAN BLACK # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>DOES # <set>black</set> # $GLASS</pattern>
+        <template><srai>CAN BLACK # BE # GLASS</srai></template>
+    </category>
+        <category>
+        <pattern>WILL # <set>black</set> # $GLASS</pattern>
+        <template><srai>CAN BLACK # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <that>So what do you want to know about our black products?</that>
+        <pattern>CAN # IT # GLASS</pattern>
+        <template><srai>CAN BLACK # BE # GLASS</srai></template>
+    </category>
+	<category>
+	    <that>SO WHAT DO YOU WANT TO KNOW ABOUT OUR BLACK PRODUCTS</that>
+        <pattern>DOES # IT # $GLASS</pattern>
+        <template><srai>CAN BLACK # BE # GLASS</srai></template>
+    </category>
+        <category>
+        <that>SO WHAT DO YOU WANT TO KNOW ABOUT OUR BLACK PRODUCTS</that>
+        <pattern>WILL # IT # $GLASS</pattern>
+        <template><srai>CAN BLACK # BE # GLASS</srai></template>
+    </category>
+    <!-- Painting nails with black -->
+        <category>
+        <pattern>CAN # BLACK # NAIL #</pattern>
+        <template>It actually can! I would actually just paint your nails with it straight out of the bottle. Yes, it may scratch and chip off but you can always re-touch. You could put a topcoat on it however there is no coat as matte as our Black paints so it would kill the effect. Take a look at our paints and try it out! Post a picture an let us know how it went!
+        <button>
+            <text>Black 2.0</text>p
+            <url>https://culturehustle.com/collections/potions/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material</url>
+        </button>
+        <button>
+            <text>Black 3.0 (coming soon 😏)</text>
+            <url>https://culturehustle.com/collections/potions/products/black-3-0-the-worlds-blackest-black-acrylic-paint-150ml</url>
+        </button>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES # BLACK # NAIL #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+        <category>
+        <pattern>WILL # BLACK # NAIL #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+    <category>
+        <that>So what do you want to know about our black products?</that>
+        <pattern>CAN # IT # NAIL #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+	<category>
+	    <that>So what do you want to know about our black products?</that>
+        <pattern>DOES # IT # NAIL #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+        <category>
+        <that>So what do you want to know about our black products?</that>
+        <pattern>WILL # IT # NAIL #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # PAINT BLACK # NAILS #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+    <category>
+        <pattern>DOES # BLACK # NAILS #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+        <category>
+        <pattern>WILL # BLACK # NAILS #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+    <category>
+        <that>So what do you want to know about our black products?</that>
+        <pattern>CAN # IT # NAILS #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+	<category>
+	    <that>So what do you want to know about our black products?</that>
+        <pattern>DOES # IT # NAILS #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+        <category>
+        <that>So what do you want to know about our black products?</that>
+        <pattern>WILL # IT # NAILS #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # NAILS # BLACK #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # NAIL # BLACK #</pattern>
+        <template><srai>CAN BLACK # NAIL #</srai></template>
+    </category>
+    <!-- Painting Guitar/Instrument with black -->
+    <category>
+        <pattern>CAN # BLACK # <set>instruments</set> #</pattern>
+        <template>Yes! Black itself isn't too durable so on an instrument that is being handled frequently, I would suggest using Coat as a varnish to protect the paint.
+        <button>
+            <text>Black 2.0</text>
+            <url>https://culturehustle.com/collections/potions/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material</url>
+        </button>
+        <button>
+            <text>Black 3.0 (coming soon 😏)</text>
+            <url>https://culturehustle.com/collections/potions/products/black-3-0-the-worlds-blackest-black-acrylic-paint-150ml</url>
+        </button>
+            <button>
+            <text>Coat</text>
+            <url>https://culturehustle.com/collections/potions/products/coat-the-mattest-mattifying-protective-membrane-240ml</url>
+        </button>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES # BLACK # <set>instruments</set> #</pattern>
+        <template><srai>CAN # BLACK # <set>instruments</set> #</srai></template>
+    </category>
+        <category>
+        <pattern>WILL # BLACK # <set>instruments</set> #</pattern>
+        <template><srai>CAN # BLACK # <set>instruments</set> #</srai></template>
+    </category>
+    <category>
+        <that>So what do you want to know about our black products?</that>
+        <pattern>CAN # IT # <set>instruments</set> #</pattern>
+        <template><srai>CAN # BLACK # <set>instruments</set> #</srai></template>
+    </category>
+	<category>
+	    <that>So what do you want to know about our black products?</that>
+        <pattern>DOES # IT # <set>instruments</set> #</pattern>
+        <template><srai>CAN # BLACK # <set>instruments</set> #</srai></template>
+    </category>
+        <category>
+        <that>So what do you want to know about our black products?</that>
+        <pattern>WILL # IT # <set>instruments</set> #</pattern>
+        <template><srai>CAN # BLACK # <set>instruments</set> #</srai></template>
+    </category>
+    
+	<!-- Palette .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout palette</pattern>
+	    <template>So what do you want to know about Palette?</template>
+    </category>
+	
+	<!-- Coat .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout coat</pattern>
+	    <template>So what do you want to know about Coat?</template>
+    </category>
+    
+    <category>
+        <pattern>What is coat #</pattern>
+        <template>Coat is a varnish that can be used as a final layer over dry paint to make it more durable. A perfect use for it would be over black 2.0 or 3.0!</template>
+    </category>
+	
+	<!-- Merch .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout merch</pattern>
+	    <template>So what do you want to know about our merchandise?</template>
+    </category>
+	
+	
+	
+	<!-- Error Catching For Main Paints/Products/Etc... .................................................................. -->
+<category>
+	<pattern>CAN # ABOUT # <set>products</set></pattern>
+	<template><srai><set>products</set></srai></template>
+</category>
+<category>
+    <pattern><set>products</set></pattern>
+    <template><srai><set>products</set></srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>products</set></pattern>
+    <template><srai><set>products</set></srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>products</set></pattern>
+    <template><srai><set>products</set></srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>products</set></pattern>
+    <template><srai><set>products</set></srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>products</set></pattern>
+    <template><srai><set>products</set></srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>products</set></pattern>
+    <template><srai><set>products</set></srai></template>
+</category>
+
+	<!-- Error Catching Diamond Dust -->
+	
+<category>
+    <pattern><set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+
+	<!-- Error Catching Powders -->
+
+<category>
+    <pattern><set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+
+	<!-- Error Catching Glitters -->	
+
+<category>
+    <pattern><set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+
+
+	<!-- Error Catching Potions -->
+
+<category>
+    <pattern><set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+
+	<!-- Error Catching Superbase -->
+
+<category>
+    <pattern><set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+
+	<!-- Error Catching Gold -->
+
+<category>
+    <pattern><set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+
+	<!-- Error Catching Lit -->
+
+<category>
+    <pattern><set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+
+	<!-- Error Catching Phaze -->
+
+<category>
+    <pattern><set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+
+	<!-- Error Catching Rainbow Liquid -->
+
+<category>
+    <pattern><set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+
+	<!-- Error Catching Black -->
+
+<category>
+    <pattern><set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>BLACK PAINT</pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+
+	<!-- Error Catching Palette -->
+
+<category>
+    <pattern><set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+
+	<!-- Error Catching Coat -->
+
+<category>
+    <pattern><set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+
+	<!-- Error Catching Merch -->
+
+<category>
+    <pattern><set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+
+<!-- More Learning Files (to be organised) -->
+
+</aiml>
