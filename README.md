@@ -20,5 +20,5 @@ Intended for customer support with products and general art content.
 </p>
 
 <p align="center">
-Paid work
+Paid work - Company website overhauled years after leaving (may or may not be in use still)
 </p>
